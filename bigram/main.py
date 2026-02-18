@@ -20,7 +20,7 @@ console = Console(theme=custom_theme)
 
 with console.status("[cyan]Loading training data...", spinner="dots"):
     # Data loading
-    data = open("./data/train.txt").read()
+    data = open("../data/train.txt").read()
     train_text = data.replace("UNK", '').replace('\n', '')
     console.print(f"[success] SUCCESS[/] Loaded {len(train_text):,} characters!")
 
